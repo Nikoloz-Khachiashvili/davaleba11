@@ -1,0 +1,163 @@
+@media(width >= 768px){
+    .photo1, .photo3{
+        display: none;
+    }
+
+    .photo2{
+        display: inline;
+        position: absolute;
+        left: 370px;
+        top: 10px;
+    }
+
+    body{
+        padding: 24px 39px 0px 39px;
+    }
+
+    header{
+        display: flex;
+        flex-direction: row;
+        column-gap: 460px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .maximize-skill{
+        display: flex;
+        flex-direction: column;
+        margin-top: 105px;
+        row-gap: 25px;
+    }
+
+    main{
+        margin-top: 210px;
+        display: grid;
+        grid-template-areas: 'check-out animation-div'
+                             'design-div photography-div'
+                             'crypto-div business-div';
+        column-gap: 11px;
+    }
+
+    .check-out{
+        grid-area: 'check-out';
+        width: 339px;
+        height: 259px;
+        padding: 56px 21px 139px 32px;
+    }
+
+    .animation-div{
+        grid-area: 'animation-div';
+    }
+
+    .design-div{
+        grid-area: 'design-div';
+    }
+
+    .photography-div{
+        grid-area: 'photography-div';
+    }
+
+    .crypto-div{
+        grid-area: 'crypto-div';
+    }
+
+    .business-div{
+        grid-area: 'business-div';
+    }
+
+    footer{
+        margin-left: -39px;
+        width: 768px;
+        height: 120px;
+        column-gap: 460px;
+    }
+}
+
+
+@media(width >= 1440px){
+    .photo1, .photo2{
+        display: none;
+    }
+
+    .photo3{
+        display: inline;
+        position: absolute;
+        left: 990px;
+        top: 10px;
+    }
+
+    body{
+        padding: 24px 165px 0px 165px;
+    }
+
+    header{
+        display: flex;
+        flex-direction: row;
+        column-gap: 1161px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .header-button{
+        height: 56px;
+    }
+
+    .header-button:hover{
+        background: var(--666CA3, #666CA3);
+        border: none;
+    }
+
+    .maximize-skill-button:hover{
+        background: var(--Gradient-1-Hover, linear-gradient(0deg, rgba(255, 255, 255, 0.50) 0%, rgba(255, 255, 255, 0.50) 100%), linear-gradient(180deg, #FF6F48 0%, #F02AA6 100%));
+        border: none;
+    }
+
+    main{
+        margin-top: 400px;
+        display: grid;
+        grid-template-areas: 'check-out animation-div design-div'
+                             'photography-div crypto-div business-div';
+        row-gap: 80px;
+        margin-right: -100px;
+    }
+
+    .animation-div, .design-div, .photography-div, .crypto-div, .business-div, .check-out{
+        width: 350px;
+        height: 322px;
+        display: flex;
+        flex-direction: column;
+        row-gap: 20px;
+    }
+
+    .check-out{
+        grid-area: 'check-out';
+        padding: 64px 32px 138px 32px;
+    }
+
+    .animation-div{
+        grid-area: 'animation-div';
+    }
+
+    .design-div{
+        grid-area: 'design-div';
+    }
+
+    .photography-div{
+        grid-area: 'photography-div';
+    }
+
+    .crypto-div{
+        grid-area: 'crypto-div';
+    }
+
+    .business-div{
+        grid-area: 'business-div';
+    }
+
+    footer{
+        margin-left: -165px;
+        width: 1695px;
+        height: 120px;
+        column-gap: 829px;
+    }
+}
